@@ -1,0 +1,199 @@
+/*
+* body定義
+*/
+body {
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+errorbody {
+    background-color: red;
+}
+#wrapper {
+    width:100%;
+    padding:0px;
+}
+
+
+/*
+* ヘッダー、フッター共通定義
+*/
+#header,#gymBody,#footer {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #66CCFF;
+}
+
+/*
+* ヘッダー定義
+*/
+#header {
+    top: 2px;
+    height: 40px;
+    width:100%;
+}
+#headLeft {
+    width:200px;
+    text-align:left;
+}
+#headCenter {
+    font-size: 24px;
+    color: #FFFF00;
+    width:800px;
+    text-align:center;
+	text-indent: 120px;
+}
+#headRight {
+    width:200px;
+    text-align:right;
+}
+/*
+* メニュー画面のボタン
+*/
+.menuBlock {
+    margin-left:30px;
+    float:left;
+    text-align:"center";
+    padding:30px;
+}
+
+/*
+* 業務body定義
+*/
+#gymBody {
+    height: 500px;
+    overflow: auto;
+}
+
+/*
+* フッター定義
+*/
+#footer {
+    bottom: 1%;
+    height: 90px;
+}
+#footLeft {
+    float:left;
+    width:400px;
+    text-align:left;
+}
+#footCenter {
+    float:left;
+    width:400px;
+    text-align:center;
+}
+#footRight {
+    float:left;
+    width:400px;
+    text-align:right;
+}
+/*
+* エラーページ ヘッダー、フッター共通定義
+*/
+#errorHeader,#errorGymBody,#errorFooter {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: #FFA4C6;
+}
+
+/*
+* エラーページ ヘッダー定義
+*/
+#errorHeader {
+    top: 1%;
+    height: 6%;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFF00;
+}
+
+/*
+* エラーページ 業務body定義
+*/
+#errorGymBody {
+    top: 8%;
+    height: 80%;
+    overflow: auto;
+    font-weight: bold;
+    color: black;
+}
+
+/*
+* エラーページ フッター定義
+*/
+#errorFooter {
+    bottom: 1%;
+    height: 10%;
+}
+
+/*
+* ボタンサイズ通常
+*/
+.smlButton {
+    width: 100px;
+    height: 30px;
+    background-color:rgb(192, 192, 192) ;
+   	border-color: white black black white;
+}
+
+/*
+* ボタンサイズ大
+*/
+.bigButton {
+    width: 200px;
+    height: 50px;
+    background-color:rgb(192, 192, 192) ;
+   border-color: white black black white;
+}
+/*
+* ボタンサイズロング
+*/
+.lngButton {
+    width: 200px;
+    height: 30px;
+}
+
+
+/*
+* 戻るボタンのスタイル
+*/
+.backBtn {
+    top: 5px;
+    left: 10px;
+}
+
+/*
+* テーブルヘッダーのスタイル
+*/
+.tblHeader {
+    background-color: #98FB98;
+    font-weight: bold;
+}
+
+/*
+* テーブルボディのスタイル
+*/
+.tblBody {
+    background-color: #E0FFFF;
+}
+/*
+* 文字色 黒
+*/
+.fontBlack {
+    color: black;
+}
+
+/*
+* 文字色 青
+*/
+.fontBlue {
+    color: blue;
+}
+
+/*
+* 文字色 赤
+*/
+.fontRed {
+    color: red;
+}
