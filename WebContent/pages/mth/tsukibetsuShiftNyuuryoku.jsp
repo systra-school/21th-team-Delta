@@ -86,7 +86,7 @@ if (listSize > intShowLength) {
     </script>
     <title>ŒŽ•ÊƒVƒtƒg“ü—Í‰æ–Ê</title>
 
-    <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/kikin_test/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="wrapper">

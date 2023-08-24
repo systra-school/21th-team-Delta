@@ -39,7 +39,7 @@
     <title>
     基本シフト確認
     </title>
-    <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/kikin_test/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="wrapper">

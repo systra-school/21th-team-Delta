@@ -9,7 +9,7 @@
 	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
 	<html:javascript formName="loginForm" />
 	<title>ƒƒOƒCƒ“‰æ–Ê</title>
-	<link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="/kikin_test/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
         <div id="wrapper">

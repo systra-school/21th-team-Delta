@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
 <script type="text/javascript" src="/kikin/pages/js/common.js"></script>
 <title>ƒGƒ‰[</title>
-<link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/kikin_test/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="errorHeader">
