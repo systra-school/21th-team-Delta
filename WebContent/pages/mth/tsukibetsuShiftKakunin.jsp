@@ -85,7 +85,7 @@ if (listSize > intShowLength) {
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/tsukibetsuShiftKakuninBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="javascript:history.back();" />
             </td>
             <td id="headCenter">
               月別シフト確認
