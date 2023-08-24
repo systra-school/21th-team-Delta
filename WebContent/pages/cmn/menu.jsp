@@ -90,7 +90,6 @@
               <input type="submit" value="Šî–{ƒVƒtƒg“o˜^" class="bigButton" />
             </html:form>
           </div>
-
         </logic:equal>
 
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"

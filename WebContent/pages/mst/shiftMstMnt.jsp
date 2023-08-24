@@ -50,7 +50,7 @@
      * êVãKìoò^âÊñ Ç÷
      */
     function shiftMstMntRegistInit() {
-        document.forms[0].action = "/kikin/shiftMstMntRegistInit.do";
+        document.forms[0].action = "/kikin_test/shiftMstMntRegistInit.do";
         document.forms[0].submit();
     }
 
