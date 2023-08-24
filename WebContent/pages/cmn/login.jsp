@@ -32,7 +32,7 @@
 
 		<div id="gymBody">
 		  <div align="center">
-		    <div>ID・パスワードを入力してください。ああああ</div>
+		    <div>ID・パスワードを入力してください。</div>
 		    <html:form action="/login" onsubmit="return validateLoginForm(this)">
 		      <html:text property="shainId" size="16" value="" />
 		      <br/>
