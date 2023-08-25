@@ -46,12 +46,12 @@ public class LogoutAction extends Action {
             HttpServletRequest req, HttpServletResponse res) throws Exception {
         // セッション
         HttpSession session = req.getSession();
-
+        
         // フォワードキー
         String forward = CommonConstant.SUCCESS;
 
         // 全てのセッションを削除する。
-        @SuppressWarnings("unchecked")
+       @SuppressWarnings("unchecked")
         Enumeration<String> sessionEnum = session.getAttributeNames();
 
         while (sessionEnum.hasMoreElements()) {
