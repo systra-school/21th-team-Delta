@@ -95,7 +95,7 @@ if (listSize > intShowLength) {
           <tr>
             <td id="headLeft">
             <!-- š -->
-              <input value="–ß‚é" type="button" class="smlButton"  onclick="javascript:history.back();" />
+              <input value="–ß‚é" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuBack.do')" />
             </td>
             <td id="headCenter">
               ŒŽ•ÊƒVƒtƒg“ü—Í
