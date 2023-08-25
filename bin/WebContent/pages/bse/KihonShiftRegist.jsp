@@ -58,7 +58,7 @@
      * êVãKìoò^âÊñ Ç÷
      */
     function shainMstMntRegistInit() {
-        document.forms[0].action = "/kikin/shainMstMntRegistInit.do";
+        document.forms[0].action = "/kikin_test/shainMstMntRegistInit.do";
         document.forms[0].submit();
     }
 
@@ -128,7 +128,7 @@
       </div>
 
       <div class="backBtn">
-        <input value="ñﬂÇÈ" type="button" class="smlButton"  onclick="doSubmit('/kikin/menu.do')" />
+        <input value="ñﬂÇÈ" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/menu.do')" />
       </div>
 
       <div class="logoutBtn">

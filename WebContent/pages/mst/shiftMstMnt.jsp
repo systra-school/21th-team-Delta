@@ -150,7 +150,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shiftMstMntBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/shiftMstMntBack.do')" />
             </td>
             <td id="headCenter">
               シフトマスタメンテナンス

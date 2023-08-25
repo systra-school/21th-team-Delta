@@ -101,7 +101,7 @@
 			}
 			
 			if(!errorMsg) {
-				doSubmit('/kikin/kinmuJissekiNyuryokuKakuninRegist.do');
+				doSubmit('/kikin_test/kinmuJissekiNyuryokuKakuninRegist.do');
 			}
      	}	
     }
@@ -109,7 +109,7 @@
      * ŒŸõ
      */
     function submitSearch() {
-        doSubmit('/kikin/kinmuJissekiNyuryokuKakuninSearch.do');
+        doSubmit('/kikin_test/kinmuJissekiNyuryokuKakuninSearch.do');
     }
     
     
@@ -124,7 +124,7 @@
         <table width="100%">
           <tr>
             <td id="headLeft">
-              <input value="–ß‚é" type="button" class="smlButton"  onclick="doSubmit('/kikin/kinmuJissekiNyuryokuKakuninBack.do')" />
+              <input value="–ß‚é" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/kinmuJissekiNyuryokuKakuninBack.do')" />
             </td>
             <td id="headCenter">
               ‹Î–±ÀÑ“ü—Í

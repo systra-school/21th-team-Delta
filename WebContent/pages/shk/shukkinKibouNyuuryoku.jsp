@@ -38,7 +38,7 @@
      */
     function submitShukkinKibou() {
         // サブミット
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuShukkinKibou.do');
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuShukkinKibou.do');
     }
 
     /**
@@ -46,21 +46,21 @@
      */
     function submitRegist() {
         // サブミット
-        doSubmit('/kikin/syukkinKibouNyuuryokuRegist.do');
+        doSubmit('/kikin_test/syukkinKibouNyuuryokuRegist.do');
     }
 
     /**
      * 検索
      */
     function submitSearch() {
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuSearch.do');
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuSearch.do');
     }
 
     /**
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+        window.open("/kikin_test/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
     </script>
@@ -74,7 +74,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/tsukibetsuShiftNyuuryokuBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuBack.do')" />
             </td>
             <td id="headCenter">
               出勤希望日入力

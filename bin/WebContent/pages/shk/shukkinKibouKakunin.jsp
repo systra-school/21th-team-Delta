@@ -37,13 +37,13 @@
      * 検索
      */
     function submitSearch() {
-        doSubmit('/kikin/shukkinKibouKakuninSearch.do');
+        doSubmit('/kikin_test/shukkinKibouKakuninSearch.do');
     }
     /**
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+        window.open("/kikin_test/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
     </script>
@@ -57,7 +57,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shukkinKibouKakuninBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/shukkinKibouKakuninBack.do')" />
             </td>
             <td id="headCenter">
               出勤希望確認
@@ -78,8 +78,8 @@
                                     value="key"
                                     label="value"/>
             </html:select>
-            <html:link href="/kikin/shukkinKibouKakuninPage.do?paging=back">前へ</html:link>
-            <html:link href="/kikin/shukkinKibouKakuninPage.do?paging=next">次へ</html:link>
+            <html:link href="/kikin_test/shukkinKibouKakuninPage.do?paging=back">前へ</html:link>
+            <html:link href="/kikin_test/shukkinKibouKakuninPage.do?paging=next">次へ</html:link>
             <bean:write name="shukkinKibouKakuninForm" property="cntPage"/>/
             <bean:write name="shukkinKibouKakuninForm" property="maxPage"/>
             

@@ -56,7 +56,7 @@
      * 検索
      */
     function submitSearch() {
-        doSubmit('/kikin/shukkinKibouKakuninShow.do');
+        doSubmit('/kikin_test/shukkinKibouKakuninShow.do');
     }
 
     /**
@@ -78,7 +78,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/hibetsuShiftBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/hibetsuShiftBack.do')" />
             </td>
             <td id="headCenter">
               日別シフト確認画面
@@ -94,9 +94,9 @@
           <html:form>
             <div style="height: 20px">
               表示年月：
-              <html:link href="/kikin/hibetsuShiftPage.do?paging=back">前日</html:link>
+              <html:link href="/kikin_test/hibetsuShiftPage.do?paging=back">前日</html:link>
               <bean:write name="hibetsuShiftForm" property="yearMonthDayDisp"/>
-              <html:link href="/kikin/hibetsuShiftPage.do?paging=next">翌日</html:link>
+              <html:link href="/kikin_test/hibetsuShiftPage.do?paging=next">翌日</html:link>
             </div>
             <table border="0" cellpadding="0" cellspacing="0">
               <tr>

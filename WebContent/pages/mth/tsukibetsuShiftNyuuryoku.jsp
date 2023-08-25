@@ -58,7 +58,7 @@ if (listSize > intShowLength) {
      */
     function submitShukkinKibou() {
         // サブミット
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuShukkinKibou.do');
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuShukkinKibou.do');
     }
 
     /**
@@ -66,21 +66,21 @@ if (listSize > intShowLength) {
      */
     function submitRegist() {
         // サブミット
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuRegist.do');
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuRegist.do');
     }
 
     /**
      * 検索
      */
     function submitSearch() {
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuSearch.do');
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuSearch.do');
     }
 
     /**
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+        window.open("/kikin_test/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
     </script>
@@ -118,8 +118,8 @@ if (listSize > intShowLength) {
                                       value="key"
                                       label="value"/>
               </html:select>
-              <html:link href="/kikin/tsukibetsuShiftNyuuryokuPage.do?paging=back">前へ</html:link>
-              <html:link href="/kikin/tsukibetsuShiftNyuuryokuPage.do?paging=next">次へ</html:link>
+              <html:link href="/kikin_test/tsukibetsuShiftNyuuryokuPage.do?paging=back">前へ</html:link>
+              <html:link href="/kikin_test/tsukibetsuShiftNyuuryokuPage.do?paging=next">次へ</html:link>
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
             </div>

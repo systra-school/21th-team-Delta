@@ -32,7 +32,7 @@
      */
     function regist() {
         // サブミット
-        doSubmit('/kikin/kihonShiftRegist.do');
+        doSubmit('/kikin_test/kihonShiftRegist.do');
     }
     </script>
 
@@ -47,7 +47,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/kihonShiftBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/kihonShiftBack.do')" />
             </td>
             <td id="headCenter">
               基本シフト確認

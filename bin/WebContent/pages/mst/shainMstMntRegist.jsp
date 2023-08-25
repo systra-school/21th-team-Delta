@@ -74,7 +74,7 @@
         }
 
         // サブミット
-        doSubmit('/kikin/shainMstMntRegist.do');
+        doSubmit('/kikin_test/shainMstMntRegist.do');
     }
 
     -->
@@ -89,7 +89,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shainMstMntRegistBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/shainMstMntRegistBack.do')" />
             </td>
             <td id="headCenter">
               社員マスタメンテナンス画面（新規登録）

@@ -50,7 +50,7 @@
      * 新規登録画面へ
      */
     function shiftMstMntRegistInit() {
-        document.forms[0].action = "/kikin/shiftMstMntRegistInit.do";
+        document.forms[0].action = "/kikin_test/shiftMstMntRegistInit.do";
         document.forms[0].submit();
     }
 
@@ -150,7 +150,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shiftMstMntBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/shiftMstMntBack.do')" />
             </td>
             <td id="headCenter">
               シフトマスタメンテナンス
