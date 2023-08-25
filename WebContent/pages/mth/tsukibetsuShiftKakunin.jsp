@@ -85,6 +85,7 @@ if (listSize > intShowLength) {
         <table>
           <tr>
             <td id="headLeft">
+            <!-- š history.back() -->
               <input value="–ß‚é" type="button" class="smlButton"  onclick="javascript:history.back();" />
             </td>
             <td id="headCenter">
