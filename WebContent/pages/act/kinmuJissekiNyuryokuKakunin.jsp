@@ -22,9 +22,9 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
-    <script type="text/javascript" src="/kikin/pages/js/common.js"></script>
-    <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
-    <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
+    <script type="text/javascript" src="/kikin_test/pages/js/common.js"></script>
+    <script type="text/javascript" src="/kikin_test/pages/js/checkCommon.js"></script>
+    <script type="text/javascript" src="/kikin_test/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
     /**
      * hh:mm形式と勤務開始時間＜勤務終了時間のチェック後エラーが無かったら登録する
