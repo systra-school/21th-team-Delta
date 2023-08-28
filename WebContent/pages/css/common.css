@@ -2,7 +2,8 @@
 * body定義
 */
 body {
-    background-color: #FFFFFF;
+	/* 左と上に余白があったのですべて66CCFFにしました */
+    background-color: #66CCFF;
     overflow: hidden;
 }
 errorbody {
