@@ -50,7 +50,6 @@
     <script type="text/javascript" src="/kikin_test/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin_test/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
-    <!--
 
     /**
      * 検索
@@ -66,7 +65,6 @@
         headRightTbl.scrollLeft = bodyRightTbl.scrollLeft;
         bodyLeftTbl.scrollTop = bodyRightTbl.scrollTop;
     }
-    -->
     </script>
     <title>日別シフト確認画面</title>
 
