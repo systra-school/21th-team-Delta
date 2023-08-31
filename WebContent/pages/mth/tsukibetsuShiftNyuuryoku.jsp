@@ -110,10 +110,10 @@ if (listSize > intShowLength) {
         </table>
       </div>
       <!-- hiddenÅ®auto -->
-      <div id="gymBody" style="overflow: hidden;">
+      <div id="gymBody" style="overflow: auto;">
         <html:form action="/tsukibetsuShiftNyuuryokuPage" >
         <!-- 50pxÅ®80px -->
-          <div style="margin-left:50px;">
+          <div style="margin-left:80px;">
             <div style="height: 25px;">
             
               ï\é¶îNåéÅF
