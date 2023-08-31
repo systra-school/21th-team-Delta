@@ -27,8 +27,11 @@
 <bean:define id="cntPage" name="tsukibetsuShiftNyuuryokuForm" property="cntPage" type="java.lang.Integer"/>
 <bean:define id="maxPage" name="tsukibetsuShiftNyuuryokuForm" property="maxPage" type="java.lang.Integer"/>
 
+
+
 <%
-final int heightSize = 22;
+/* 22Å®26 */
+final int heightSize = 26;
 
 int intShowLength = Integer.parseInt(showLength);
 
@@ -106,10 +109,13 @@ if (listSize > intShowLength) {
           </tr>
         </table>
       </div>
+      <!-- hiddenÅ®auto -->
       <div id="gymBody" style="overflow: hidden;">
         <html:form action="/tsukibetsuShiftNyuuryokuPage" >
+        <!-- 50pxÅ®80px -->
           <div style="margin-left:50px;">
             <div style="height: 25px;">
+            
               ï\é¶îNåéÅF
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftNyuuryokuForm" property="yearMonth" type="String"/>
               <html:select property="yearMonth" name="tsukibetsuShiftNyuuryokuForm"  onchange="submitSearch()">
@@ -133,7 +139,7 @@ if (listSize > intShowLength) {
                       </td>
                     </tr>
                     <tr height="<%=heightSize %>px">
-                      <td width="150px" align="center">
+                      <td width="40px" align="center">
                       é–àıñº
                       </td>
                     </tr>
