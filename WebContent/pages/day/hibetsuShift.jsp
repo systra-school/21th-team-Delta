@@ -23,7 +23,9 @@
     int bodyRightDivHeight = 0;
     int bodyLeftDivHeight = 0;
     // ボディテーブルの td の幅
-    int tdWidth = 150;
+    int tdWidth = 180;
+    //時間テーブルの幅追加しました
+    int tdTimeWidth=150;
     // ボディテーブルの tr の縦
     int trHeight = 50;
     // 縦スクロールバーの幅
@@ -102,7 +104,7 @@
                   <div id="headLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 154px;">
                     <table border="1" cellpadding="0" cellspacing="0" class="tblHeader">
                       <tr>
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         時間
                         </td>
                       </tr>
@@ -114,7 +116,7 @@
                     <table border="1" cellpadding="0" cellspacing="0" class="tblHeader">
                       <tr>
                         <logic:iterate id="hibetsuShiftBean" name="hibetsuShiftForm" property="hibetsuShiftBeanList">
-                          <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                          <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                             <bean:write name="hibetsuShiftBean" property="shainName"/><br>
                           </td>
                         </logic:iterate>
@@ -130,122 +132,122 @@
                   <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 154px;height:<%=bodyLeftDivHeight %>px; ">
                     <table border="1" cellpadding="0" cellspacing="0" class="tblBody">
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         00:00&#xFF5E;01:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         01:00&#xFF5E;02:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         02:00&#xFF5E;03:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         03:00&#xFF5E;04:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         04:00&#xFF5E;05:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         05:00&#xFF5E;06:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         06:00&#xFF5E;07:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         07:00&#xFF5E;08:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         08:00&#xFF5E;09:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         09:00&#xFF5E;10:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         10:00&#xFF5E;11:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         11:00&#xFF5E;12:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         12:00&#xFF5E;13:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         13:00&#xFF5E;14:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         14:00&#xFF5E;15:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         15:00&#xFF5E;16:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         16:00&#xFF5E;17:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         17:00&#xFF5E;18:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         18:00&#xFF5E;19:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         19:00&#xFF5E;20:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         20:00&#xFF5E;21:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         21:00&#xFF5E;22:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         22:00&#xFF5E;23:00
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
-                        <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
+                        <td width="<%=tdTimeWidth %>px" nowrap="nowrap" align="center">
                         23:00&#xFF5E;24:00
                         </td>
                       </tr>
