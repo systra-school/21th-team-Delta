@@ -63,7 +63,7 @@
         input="/pages/cmn/login.jsp"
         validate="true">
         <forward name="success" path="/pages/cmn/menu.jsp"/>
-        <forward name="error" path="/pages/cmn/login.jsp"/>
+        <forward name="error" path="/pages/cmn/login2.jsp"/>
       </action>
 
       <!-- ログアウト -->
