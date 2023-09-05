@@ -51,7 +51,7 @@ if (listSize > intShowLength) {
     <script type="text/javascript" src="/kikin_test/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin_test/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
-    <!--
+    
 
     /**
      * o‹ÎŠó–]”½‰f
@@ -82,7 +82,7 @@ if (listSize > intShowLength) {
     function openWindow(){
         window.open("/kikin_test/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
-    -->
+    
     </script>
     <title>ŒŽ•ÊƒVƒtƒg“ü—Í‰æ–Ê</title>
 
@@ -122,7 +122,7 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
             </div>
-            <table width="1100px" cellpadding="0" cellspacing="0">
+            <table width="1100px" border="1"  cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">
                   <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
@@ -137,7 +137,7 @@ if (listSize > intShowLength) {
                       </td>
                     </tr>
                     <logic:iterate offset="offset" length="<%=showLength %>"  id="tsukibetsuShiftNyuuryokuBeanList" name="tsukibetsuShiftNyuuryokuForm" property="tsukibetsuShiftNyuuryokuBeanList">
-                      <tr height="<%=heightSize %>px">
+                      <tr>
                         <td width="150px" align="center">
                           <bean:write property="shainName" name="tsukibetsuShiftNyuuryokuBeanList"/><br>
                         </td>
@@ -251,7 +251,7 @@ if (listSize > intShowLength) {
                         </td>
                         <% } %>
                       </tr>
-                      <tr height="<%=heightSize %>px">
+                      <tr>
                         <logic:iterate id="dateBeanList" name="tsukibetsuShiftNyuuryokuForm" property="dateBeanList">
                           <bean:define id="youbi" name="dateBeanList" property="youbi"/>
                             <%

@@ -31,7 +31,7 @@
     <script type="text/javascript" src="/kikin_test/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin_test/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
-    <!--
+    
 
     /**
      * o‹ÎŠó–]”½‰f
@@ -62,7 +62,7 @@
     function openWindow(){
         window.open("/kikin_test/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
-    -->
+    
     </script>
     <title>o‹ÎŠó–]“ú“ü—Í</title>
 
