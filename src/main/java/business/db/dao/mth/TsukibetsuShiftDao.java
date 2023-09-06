@@ -10,24 +10,19 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import constant.DbConstant.M_base_shift;
-import constant.DbConstant.M_shain;
-import constant.DbConstant.M_shift;
-import constant.DbConstant.T_Shift;
-
 import business.db.dao.AbstractDao;
 import business.dto.LoginUserDto;
-import business.dto.mth.TsukibetsuBaseShiftDto;
 import business.dto.mth.TsukibetsuShiftDto;
 import business.dto.shk.ShukkinKibouKakuninDto;
 import business.logic.utils.CommonUtils;
+import constant.DbConstant.M_shain;
+import constant.DbConstant.M_shift;
+import constant.DbConstant.T_Shift;
 
 /**
  * 説明：月別シフトのDao
@@ -211,7 +206,7 @@ public class TsukibetsuShiftDao extends AbstractDao{
      * @param loguinUserDto ログインユーザDto
      * @author Kazuya.Naraki
      */
-    public void updateShiftTbl(TsukibetsuShiftDto tsukibetsuShiftDto, LoginUserDto loginUserDto) throws SQLException{
+    public void updateShiftTbl(TsukibetsuShiftDto tsukibetsuShiftDto, LoginUserDto loginUserDto, boolean syukkin) throws SQLException{
 
         try {
 
@@ -219,7 +214,11 @@ public class TsukibetsuShiftDao extends AbstractDao{
             strSql.append("UPDATE ");
             strSql.append("T_SHIFT ");
             strSql.append("SET ");
-            strSql.append("SHIFT_ID = ?, ");
+            if (syukkin) {
+            	strSql.append("KIBOU_SHIFT_ID = ?, ");
+            }else {
+            	strSql.append("SHIFT_ID = ?, ");
+            }
             strSql.append("UPDATE_SHAIN_ID = ?, ");
             strSql.append("UPDATE_DT = current_timestamp() ");
             strSql.append("WHERE ");

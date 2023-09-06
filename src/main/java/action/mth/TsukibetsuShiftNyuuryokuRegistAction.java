@@ -85,7 +85,7 @@ public class TsukibetsuShiftNyuuryokuRegistAction extends TsukibetsuShiftNyuuryo
         List<List<TsukibetsuShiftDto>> tsukibetsuShiftDtoListList = this.formToDto(tsukibetsuShiftBeanList, dateBeanList);
 
         // 登録・更新処理
-        tsukibetsuShiftLogic.registTsukibetsuShift(tsukibetsuShiftDtoListList, loginUserDto);
+        tsukibetsuShiftLogic.registTsukibetsuShift(tsukibetsuShiftDtoListList, loginUserDto, false);
 
         // シフトIDを取得する
         Map<String,List<TsukibetsuShiftDto>> tsukibetsuShiftDtoMap = tsukibetsuShiftLogic.getTsukibetsuShiftDtoMap(yearMonth, true);

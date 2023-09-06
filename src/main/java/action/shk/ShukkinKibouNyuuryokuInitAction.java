@@ -73,7 +73,7 @@ public class ShukkinKibouNyuuryokuInitAction extends ShukkinKibouAbstractAction 
 		List<DateBean> dateBeanList = CommonUtils.getDateBeanList(yearMonth);
 
 		// シフトIDを取得する
-		Map<String,List<TsukibetsuShiftDto>> tsukibetsuShiftDtoMap = tsukibetsuShiftLogic.getTsukibetsuShiftDtoMap(yearMonth, true);
+		Map<String,List<TsukibetsuShiftDto>> tsukibetsuShiftDtoMap = tsukibetsuShiftLogic.getTsukibetsuShiftDtoMap(yearMonth, false);
 
 		List<TsukibetsuShiftNyuuryokuBean> tsukibetsuShiftBeanList = new ArrayList<TsukibetsuShiftNyuuryokuBean>();
 
