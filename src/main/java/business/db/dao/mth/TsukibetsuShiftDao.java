@@ -196,6 +196,7 @@ public class TsukibetsuShiftDao extends AbstractDao{
             // 例外発生
             throw e;
         }
+        this.updateShiftTbl(tsukibetsuShiftDto, loginUserDto, true);
     }
 
 
