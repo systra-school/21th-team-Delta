@@ -53,7 +53,7 @@
      * ŒŸõ
      */
     function submitSearch() {
-        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuSearch.do');
+        doSubmit('/kikin_test/shukkinKibouNyuuryokuSearch.do');
     }
 
     /**

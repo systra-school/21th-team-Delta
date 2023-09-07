@@ -493,6 +493,13 @@
         scope="session">
         <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
       </action>
+      <action
+        path="/shukkinKibouNyuuryokuSearch"
+        type="action.shk.ShukkinKibouNyuuryokuSearchAction"
+        name="tsukibetsuShiftNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
     </action-mappings>
 
 
