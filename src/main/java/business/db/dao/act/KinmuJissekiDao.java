@@ -6,7 +6,6 @@
  */
 package business.db.dao.act;
 
-import static constant.DbConstant.T_Kinmu_Jisseki;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,11 +15,11 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import constant.DbConstant.M_shift;
-
 import business.db.dao.AbstractDao;
 import business.dto.act.KinmuJissekiDto;
 import business.logic.utils.CheckUtils;
+import constant.DbConstant.M_shift;
+import constant.DbConstant.T_Kinmu_Jisseki;
 
 /**
  * 説明：勤務実績Dao
@@ -181,6 +180,7 @@ public class KinmuJissekiDao extends AbstractDao {
      * @return 勤務実績マップ
      * @author Kazuya.Naraki
      */
+    //RurikaMoriya　9/7　202・203行　修正
     public Map<String, KinmuJissekiDto> getKinmuJissekiData(String shainId, String startDay, String endDay) throws SQLException {
         // 戻り値 Key：稼動日, value：勤務実績Dto
         Map<String, KinmuJissekiDto> kinmuJissekiMap = new LinkedHashMap<String, KinmuJissekiDto>();
@@ -199,8 +199,8 @@ public class KinmuJissekiDao extends AbstractDao {
             strSql.append("    SHIFT.BREAK_TIME_SHIFT, ");
             strSql.append("    (CASE WHEN SHIFT.KADOU_DAY IS NULL THEN TKJ.KADOU_DAY  ");
             strSql.append("    ELSE SHIFT.KADOU_DAY END) KADOU_DAY, ");
-            strSql.append("    TKJ.START_TIME AS END_TIME, ");
-            strSql.append("    TKJ.END_TIME   AS START_TIME, ");
+            strSql.append("    TKJ.START_TIME AS START_TIME, ");//AS END_TIMEをSTART_TIME
+            strSql.append("    TKJ.END_TIME   AS END_TIME, ");//AS START_TIMEをEND_TIMEに
             strSql.append("    TKJ.BREAK_TIME, ");
             strSql.append("    TKJ.JITSUDOU_TIME, ");
             strSql.append("    TKJ.JIKANGAI_TIME, ");
