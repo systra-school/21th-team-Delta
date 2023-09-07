@@ -15,15 +15,13 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import constant.DbConstant.M_shain;
-import constant.DbConstant.M_shift;
-import constant.DbConstant.T_Shift;
-
 import business.db.dao.AbstractDao;
-import business.dto.LoginUserDto;
 import business.dto.shk.ShukkinKibouKakuninDto;
 import business.dto.shk.ShukkinKibouNyuuryokuDto;
 import business.logic.utils.CommonUtils;
+import constant.DbConstant.M_shain;
+import constant.DbConstant.M_shift;
+import constant.DbConstant.T_Shift;
 
 /**
  * 説明：出勤希望処理のDao
@@ -127,7 +125,7 @@ public class ShukkinKibouDao extends AbstractDao{
             strSql.append("MSHIFT.SYMBOL, ");
             strSql.append("YEAR_MONTH_DAY ");
             strSql.append("FROM ");
-            strSql.append("T_SHIFT TSHIFT RIGHT OUTER JOIN ");
+            strSql.append("T_SHIFT TSHIFT LEFT OUTER JOIN ");
             strSql.append("M_SHIFT MSHIFT ON ");
             strSql.append("TSHIFT.KIBOU_SHIFT_ID = ");
             strSql.append("MSHIFT.SHIFT_ID ");
