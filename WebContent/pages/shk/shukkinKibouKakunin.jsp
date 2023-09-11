@@ -89,18 +89,18 @@
                   <td width="150px" valign="top">
                     <table border="1" cellpadding="0" cellspacing="0">
                       <tr class="tblHeader">
-                        <td width="150px" align="center">
+                        <td width="150px" align="center"style="max-height:10px; min-width:80px;">
                           &nbsp;
                         </td>
                       </tr>
                       <tr class="tblHeader">
-                        <td width="150px" align="center">
+                        <td width="150px" align="center"style="max-height:10px; min-width:180px;">
                         ŽÐˆõ–¼
                         </td>
                       </tr>
                       <logic:iterate offset="offset" length="<%=showLength %>" id="shukkinKibouKakuninBeanList" name="shukkinKibouKakuninForm" property="shukkinKibouKakuninBeanList">
                         <tr class="tblBody">
-                          <td width="150px" align="center" class="tblBody">
+                          <td width="150px" align="center" class="tblBody" style="max-height:10px; min-width:80px;">
                             <bean:write property="shainName" name="shukkinKibouKakuninBeanList"/><br>
                           </td>
                         </tr>
