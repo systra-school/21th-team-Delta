@@ -102,7 +102,7 @@
             <!-- ‚±‚±‚©‚çV‹K -->
             <table width="1100px" cellpadding="0" cellspacing="0" border="1">
 				<tr class="tblHeader">
-					<td ></td>
+					<td width="80px" style="min-width:80px;"></td>
 					<td width="40px" align="center">1</td>
 					<td width="40px" align="center">2</td>
 					<td width="40px" align="center">3</td>
