@@ -112,9 +112,8 @@ if (listSize > intShowLength) {
       <!-- hiddenÅ®auto -->
       <div id="gymBody" style="overflow: auto;">
         <html:form action="/tsukibetsuShiftNyuuryokuPage" >
-        <!-- 50pxÅ®80px -->
-          <div style="margin-left:80px;">
-            <div style="height: 25px;">
+          <div style="margin-left:50px;">
+            <div style="height: 26px;">
             
               ï\é¶îNåéÅF
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftNyuuryokuForm" property="yearMonth" type="String"/>
@@ -129,12 +128,14 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
             </div>
-            <table width="1100px" cellpadding="0" cellspacing="0">
+             <!-- 1100pxÅ®1300px -->
+            <table width="1300px" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="150px" valign="top">
+               <!-- 150pxÅ®180px -->
+                <td width="180px" valign="top">
                   <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                     <tr height="<%=heightSize %>px">
-                      <td width="150px" align="center">
+                      <td width="180px" align="center">
                         &nbsp;
                       </td>
                     </tr>
@@ -153,7 +154,7 @@ if (listSize > intShowLength) {
                   </table>
                 </td>
                 <td>
-                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: <%=heightSize * (listSize + 2) + 18 %>px; text-align:center;">
+                  <div style="overflow-x: auto;overflow-y: hidden; width:1100px;height: <%=heightSize * (listSize + 2) + 18 %>px; text-align:center;">
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
                         <td width="40px" align="center">
