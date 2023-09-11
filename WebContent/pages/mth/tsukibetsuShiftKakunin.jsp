@@ -114,12 +114,12 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftKakuninForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftKakuninForm" property="maxPage"/>
             </div>
-            <table width="1100px" cellpadding="0" cellspacing="0">
+            <table width="1200px" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="150px" valign="top">
+                <td width="180px" valign="top" style="min-width:180px;">
                   <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                     <tr height="<%=heightSize %>px">
-                      <td width="150px" align="center">
+                      <td width="180px" align="center">
                         &nbsp;
                       </td>
                     </tr>
