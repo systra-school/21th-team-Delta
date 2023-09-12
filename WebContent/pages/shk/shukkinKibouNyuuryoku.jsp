@@ -161,11 +161,14 @@ if (dateBeanListSize == 31) {
 						property="dateBeanList"
 					>
 						<bean:define id="youbi" name="dateBeanList" property="youbi" />
+						<bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
 						<%
 						if (DayOfWeek.SATURDAY.getRyaku().equals(youbi)) {
 							color = "fontBlue";
 						} else if (DayOfWeek.SUNDAY.getRyaku().equals(youbi)) {
 							color = "fontRed";
+						} else if((boolean)shukujitsuFlg) {
+                          	color = "fontRed";
 						} else {
 							color = "fontBlack";
 						}
