@@ -246,11 +246,14 @@ if (listSize > intShowLength) {
                       <tr height="<%=heightSize %>px">
                       <logic:iterate id="dateBeanList" name="tsukibetsuShiftKakuninForm" property="dateBeanList">
                       <bean:define id="youbiEnum" name="dateBeanList" property="youbiEnum"/>
+                      <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                            <%
                               if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
                                   color = "fontBlue";
                               } else if (DayOfWeek.SUNDAY.equals(youbiEnum)) {
                                   color = "fontRed";
+                              } else if((boolean)shukujitsuFlg) {
+                              	color = "fontRed";
                               } else {
                                   color = "fontBlack";
                               }
