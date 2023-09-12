@@ -121,7 +121,7 @@
   <body >
     <div id="wrapper">
       <div id="header">
-        <table width="100%">
+        <table>
           <tr>
             <td id="headLeft">
               <input value="–ß‚é" type="button" class="smlButton"  onclick="doSubmit('/kikin_test/kinmuJissekiNyuryokuKakuninBack.do')" />
