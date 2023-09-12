@@ -2,7 +2,7 @@
 <%@page contentType="text/html; charset=Shift_JIS" pageEncoding="Shift_JIS"%>
 <%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
-<html>
+<!DOCTYPE:html>
 <head>
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">

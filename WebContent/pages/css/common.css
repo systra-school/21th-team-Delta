@@ -1,10 +1,12 @@
 /*
 * body定義
 */
-body {
+html,body {
 	/* 左と上に余白があったのですべて66CCFFにしました */
     background-color: #66CCFF;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 errorbody {
     background-color: red;
