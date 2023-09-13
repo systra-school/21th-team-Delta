@@ -406,6 +406,16 @@
         scope="session">
         <forward name="success" path="/pages/mth/tsukibetsuShiftNyuuryoku.jsp"/>
       </action>
+      
+      <!-- 月別シフト出勤基本シフト反映 RurikaMoriya 9/7-->
+      <action
+        path="/tsukibetsuShiftNyuuryokuKihonShiftHanei"
+        type="action.mth.TsukibetsuShiftNyuuryokuKihonShiftHaneiAction"
+        name="tsukibetsuShiftNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/mth/tsukibetsuShiftNyuuryoku.jsp"/>
+      </action>
+      
       <!-- 月別シフト登録 -->
       <action
         path="/tsukibetsuShiftNyuuryokuRegist"

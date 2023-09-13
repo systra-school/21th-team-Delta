@@ -67,11 +67,20 @@ if (listSize > intShowLength) {
     /**
      * 登録
      */
+    function submitKihonShift() {
+        // サブミット
+        doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuKihonShiftHanei.do');
+    }
+
+    
+    /**
+     * 登録
+     */
     function submitRegist() {
         // サブミット
         doSubmit('/kikin_test/tsukibetsuShiftNyuuryokuRegist.do');
     }
-
+    
     /**
      * 検索
      */
@@ -262,20 +271,15 @@ if (listSize > intShowLength) {
                       <tr height="<%=heightSize %>px">
                         <logic:iterate id="dateBeanList" name="tsukibetsuShiftNyuuryokuForm" property="dateBeanList">
                           <bean:define id="youbi" name="dateBeanList" property="youbi"/>
-                          <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                             <%
                             if (DayOfWeek.SATURDAY.getRyaku().equals(youbi)) {
                                 color = "fontBlue";
                             } else if (DayOfWeek.SUNDAY.getRyaku().equals(youbi)) {
                                 color = "fontRed";
-                            } else if((boolean)shukujitsuFlg) {
-                            	color = "fontRed";
                             } else {
                                 color = "fontBlack";
                             }
                             %>
-
-                           
 
                             <td width="40px" align="center" class="<%=color %>">
                               <bean:write property="youbi" name="dateBeanList"/><br>
@@ -554,7 +558,7 @@ if (listSize > intShowLength) {
       <div id="footer">
       <div style="margin-left:50px;">
           <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
-          <input value="基本シフト反映" type="button" class="lngButton"  />
+          <input value="基本シフト反映" type="button" class="lngButton"  onclick="submitKihonShift()" />
           <input value="出勤希望日反映" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
         </div>
         <table>

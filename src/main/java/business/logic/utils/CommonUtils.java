@@ -421,6 +421,7 @@ public class CommonUtils {
                 strDay = String.valueOf(intDay);
             }
 
+            //DayOfWeekには("日曜日", "日")～があり、getRyakuは日にあたる
             StringBuffer dow = new StringBuffer();
             switch (calendar.get(Calendar.DAY_OF_WEEK)) {
               case Calendar.SUNDAY:
@@ -460,7 +461,7 @@ public class CommonUtils {
 
             dateBeanList.add(dateBean);
         }
-
+        //単日1カ月分が戻る
         return dateBeanList;
     }
 

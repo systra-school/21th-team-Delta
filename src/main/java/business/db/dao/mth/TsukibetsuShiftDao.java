@@ -92,6 +92,7 @@ public class TsukibetsuShiftDao extends AbstractDao{
             }
 
             // 最後の社員分
+            String s = "";
         } catch (SQLException e) {
             // 例外発生
             throw e;
