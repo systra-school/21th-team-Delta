@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Kosugi+Maru&display=swap');
 /*
 * body定義
 */
 html,body {
 	/* 左と上に余白があったのですべて66CCFFにしました */
-    background-color: #66CCFF;
+    background-color: rgb(255, 128, 192);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -24,7 +26,9 @@ errorbody {
     width: 100%;
     margin: 0px;
     padding: 5px;
-    background-color: #66CCFF;
+    background-color: #c8ffc0ff;
+    font-family: 'Cherry Bomb One', cursive;
+    
 }
 
 /*
@@ -39,11 +43,16 @@ errorbody {
     width:200px;
     text-align:left;
 }
+/* ログインの文字などを濃い緑にした */
 #headCenter {
-    font-size: 24px;
-    color: #FFFF00;
+    font-size: 35px;
+    color: #57ba45;
     width:800px;
     text-align:center;
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Kosugi Maru', sans-serif;
+    
+    
 }
 #headRight {
     width:200px;
@@ -57,6 +66,8 @@ errorbody {
     float:left;
     text-align:"center";
     padding:30px;
+    font-family: 'Kosugi Maru', sans-serif;
+    
 }
 
 /*
@@ -65,6 +76,7 @@ errorbody {
 #gymBody {
     height: 500px;
     overflow: auto;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 /*
@@ -135,8 +147,9 @@ errorbody {
 .smlButton {
     width: 100px;
     height: 30px;
-    background-color:rgb(192, 192, 192) ;
-   	border-color: white black black white;
+    background-color: #A8D3AA;
+   	border-color: #A8D3AA;
+   	font-family: 'Kosugi Maru', sans-serif;
 }
 
 /*
@@ -145,8 +158,9 @@ errorbody {
 .bigButton {
     width: 200px;
     height: 50px;
-    background-color:rgb(192, 192, 192) ;
-   border-color: white black black white;
+    background-color: #A8D3AA;
+   	border-color: #A8D3AA;
+   	font-family: 'Kosugi Maru', sans-serif;
 }
 /*
 * ボタンサイズロング
@@ -202,3 +216,9 @@ errorbody {
 .fontRed {
     color: red;
 }
+
+/* ログインボタン文字 ならない */
+.submit{
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
