@@ -14,7 +14,7 @@
 		var msg = "ログインIDまたはパスワードが違います。";
 		alert(msg);
 	</script>
-        <div id="wrapper">
+        <div align="center">
         <div id="header">
             <table>
               <tr>

@@ -12,7 +12,7 @@
 	<link href="/kikin_test/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-        <div id="wrapper">
+        <div align="center">
         <div id="header">
             <table>
               <tr>
