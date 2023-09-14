@@ -150,7 +150,8 @@ public class KihonShiftLogic{
 			//一時領域
 			List<TsukibetsuShiftDto> tmpList = new ArrayList<>();
 			
-			count = 0;
+			count = startYoubiNum - 1;
+			boolean flg = false;
 			//tsukibetsuShiftDtoのデータベース情報を、社員ごとに区切る
 			for(TsukibetsuShiftDto dto : tsukibetsuShiftList) {
 				if(CheckUtils.isEmpty(oldShainId)) {
@@ -161,11 +162,20 @@ public class KihonShiftLogic{
 					//dtoのシフトIDを順番にいれる。
 					dto.setShiftId(kihonShift7.get(oldShainId)[count]);
 					count++;
+					if(count > 6) {
+						count = 0;
+					}
 					//取得した値をListにセットする
 					tmpList.add(dto);
 				} else {
 					if(oldShainId.equals(dto.getShainId())) {
 						//oldShainIdが空文字じゃない　かつ　oldShainidと今回ってるdtoの社員IDが一致しているなら
+						
+						//countをstartYoubiCount(1～7はいっている)をリセット
+						if(flg) {
+							count = startYoubiNum - 1;
+							flg = false;
+						}
 						
 						//dtoのシフトIDを順番に入れる
 						dto.setShiftId(kihonShift7.get(oldShainId)[count]);
@@ -186,6 +196,7 @@ public class KihonShiftLogic{
 						//↑でいれた社員の分のshiftデータをいれる箱を再度作成 上書きではダメ
 						tmpList = new ArrayList<>();
 						count = 0;
+						flg = true;
 					}
 				}
 			}
