@@ -87,12 +87,14 @@
                     }
                 }
                 // 社員名カナチェック
+                for(var j = 0; j < shainNameKana.length; j++){
                 if (!shainmeiKanaErrorMsg) {
-                    if (!checkHankakuKana(shainNameKana)) {
+                    if (!checkHankakuKana(shainNameKana.charAt(j))) {
                         var strArr = ['社員名カナ'];
                         shainmeiKanaErrorMsg = getMessage('E-MSG-000003', strArr);
                         namedItem('shainMstMntBeanList['+ i +'].shainNameKana').style.backgroundColor = 'red';
                     }
+                }
                 }
 
                 if (passwordErrorMsg && shainmeiKanaErrorMsg) {
