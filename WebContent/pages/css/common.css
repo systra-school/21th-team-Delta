@@ -79,6 +79,13 @@ errorbody {
     overflow: auto;
     font-family: 'Kosugi Maru', sans-serif;
 }
+#menuBody {
+	height: 700px;
+    overflow: auto;
+    font-family: 'Kosugi Maru', sans-serif;
+	background-image:url(../images/kotori.png);
+    background-repeat:no-repeat;
+}
 
 /*
 * フッター定義

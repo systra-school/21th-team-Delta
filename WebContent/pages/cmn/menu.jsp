@@ -47,7 +47,7 @@
           </tr>
         </table>
       </div>
-      <div id="gymBody">
+      <div id="menuBody">
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="kengenId"
                      value="<%=CommonConstant.Kengen.KANRISYA.getId() %>">
@@ -124,19 +124,7 @@
         </logic:equal>
       </div>
       <div id="footer">
-        <table>
-          <tr>
-            <td id="footLeft">
-              Å@
-            </td>
-            <td id="footCenter">
-              Å@
-            </td>
-            <td id="footRight">
-              Å@
-            </td>
-          </tr>
-        </table>
+        
       </div>
     </div>
   </body>
