@@ -220,19 +220,27 @@
                           <bean:define id="shukujitsuFlg" name="dateBeanList" property="shukujitsuFlg"/>
                               <%
                               if (DayOfWeek.SATURDAY.equals(youbiEnum)) {
-                                  color = "fontBlue";
-                              } else if (DayOfWeek.SUNDAY.equals(youbiEnum)) {
-                                  color = "fontRed";
-                              } else if((boolean)shukujitsuFlg) {
-                              	color = "fontRed";
-                              } else {
-                                  color = "fontBlack";
-                              }
-                              %>
-
+                                  color = "fontBlue";%>
                               <td width="40px" align="center" valign="middle" class="<%=color %>">
-                                <bean:write property="youbi" name="dateBeanList"/>
+                              <bean:write property="youbi" name="dateBeanList"/>
                               </td>
+                              <%} else if (DayOfWeek.SUNDAY.equals(youbiEnum)) {
+                                  color = "fontRed";%>
+                               <td width="40px" align="center" valign="middle" class="<%=color %>">
+                              <bean:write property="youbi" name="dateBeanList"/>
+                              </td>   
+                              <%} else if((boolean)shukujitsuFlg) {
+                              	color = "fontRed";%>
+                              <td width="40px" align="center" valign="middle" class="<%=color %>">
+                              èj
+                              </td>
+                              <%} else {
+                                  color = "fontBlack";%>
+                               <td width="40px" align="center" valign="middle" class="<%=color %>">
+                              <bean:write property="youbi" name="dateBeanList"/>
+                              </td>
+                              <%}
+                              %>
                           </logic:iterate>
                         </tr>
                         <logic:iterate offset="offset"  length="<%=showLength %>" id="shukkinKibouKakuninBeanList" name="shukkinKibouKakuninForm" property="shukkinKibouKakuninBeanList">
