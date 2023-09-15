@@ -151,6 +151,7 @@ errorbody {
     background-color: #A8D3AA;
    	border-color: #A8D3AA;
    	font-family: 'Kosugi Maru', sans-serif;
+   	border-radius: 100px;
 }
 
 /*
@@ -162,6 +163,7 @@ errorbody {
     background-color: #A8D3AA;
    	border-color: #A8D3AA;
    	font-family: 'Kosugi Maru', sans-serif;
+   	border-radius: 100px;
 }
 /*
 * ボタンサイズロング
@@ -173,6 +175,7 @@ errorbody {
     background-color:#A8D3AA ;
     border-color: #A8D3AA;
     font-family: 'Kosugi Maru', sans-serif;
+    border-radius: 100px;
 }
 
 

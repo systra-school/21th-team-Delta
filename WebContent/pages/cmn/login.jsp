@@ -39,8 +39,8 @@
 		      <html:password property="password" size="16" redisplay="false" value=""/>
 		      <br/>
 		      <br/>
-		      <html:submit property="submit" value="ログイン"  style=" background-color: #A8D3AA;	border-color: #A8D3AA; font-family: 'Kosugi Maru', sans-serif;"/>
-		      <html:reset value="リセット" style=" background-color: #A8D3AA; border-color: #A8D3AA; font-family: 'Kosugi Maru', sans-serif;"/>
+		      <html:submit property="submit" value="ログイン"  style=" background-color: #A8D3AA;	border-color: #A8D3AA; font-family: 'Kosugi Maru', sans-serif; border-radius: 100px;"/>
+		      <html:reset value="リセット" style=" background-color: #A8D3AA; border-color: #A8D3AA; font-family: 'Kosugi Maru', sans-serif; border-radius: 100px;"/>
 		    </html:form>
 		  </div>
 		</div>
