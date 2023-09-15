@@ -5,7 +5,7 @@
 */
 html,body {
 	/* 左と上に余白があったのですべて66CCFFにしました */
-    background-color: rgb(255, 128, 192);
+    background-color: #c8ffc0ff;
     overflow: hidden;
     margin: 0;
     padding: 0;
