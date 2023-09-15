@@ -197,26 +197,31 @@ public class KihonShiftLogic{
 
 					// ↑でいれた社員の分のshiftデータをいれる箱を再度作成 上書きではダメ
 					tmpList = new ArrayList<>();
-					count = startYoubiNum;
+					count = startYoubiNum - 1;
+					dto.setShiftId(kihonShift7.get(oldShainId)[count]);
+					count++;
+					String s = dto.getShiftId();
 					tmpList.add(dto);
 				}
 			}
 		} // dto領域ここまで 最後の人の丸々一か月はいらなくない？
 
 		if (!CheckUtils.isEmpty(oldShainId)) {
+/*
 			// 最後分を追加（最後の人の分は↑だけではputされないで押し出されちゃっている。）
 
 			// ということで、最後の一人の一か月分を作ってListにくっつける。
 			// 最後の一か月が何日かを振り分けるすいっち
 			int endDay = 0;
 			switch (intMonth) {
-			case 1:
-			case 3:
-			case 5:
-			case 7:
-			case 8:
-			case 10:
-			case 12:
+			//intMonthは0が1月で11が12月なので、対応させるためにそれぞれ月数　－1　をする。
+			case 1 - 1:
+			case 3 - 1:
+			case 5 - 1:
+			case 7 - 1:
+			case 8 -1 :
+			case 10 - 1:
+			case 12 - 1:
 				endDay = 31;
 				break;
 			default:
@@ -244,6 +249,7 @@ public class KihonShiftLogic{
 				// 一日分をtmpListに追加していく。tmpListは↑のループでnewされている状態のため、ここではaddするだけで済んでいる。
 				tmpList.add(dto);
 			}
+			*/
 			// 最後の一人の一か月分のtsukibetsuShiftListであるtmpListを戻り値のtsukibetsuShiftMapにputする！
 			tsukibetsuShiftMap.put(oldShainId, tmpList);
 		}
