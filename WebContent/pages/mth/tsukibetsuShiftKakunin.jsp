@@ -21,14 +21,14 @@
 
 <bean:size id="dateBeanListSize" name="tsukibetsuShiftKakuninForm" property="dateBeanList"/>
 <bean:size id="listSize" name="tsukibetsuShiftKakuninForm" property="tsukibetsuShiftKakuninBeanList"/>
-<bean:define id="showLength" value="17" type="java.lang.String"/>
+<bean:define id="showLength" value="20" type="java.lang.String"/>
 <bean:define id="offset" name="tsukibetsuShiftKakuninForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="cntPage" name="tsukibetsuShiftKakuninForm" property="cntPage" type="java.lang.Integer"/>
 <bean:define id="maxPage" name="tsukibetsuShiftKakuninForm" property="maxPage" type="java.lang.Integer"/>
 
 <%
-final int heightSize = 22;
+final int heightSize = 24;
 
 int intShowLength = Integer.parseInt(showLength);
 
